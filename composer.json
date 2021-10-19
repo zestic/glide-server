@@ -41,6 +41,7 @@
         "aws/aws-sdk-php": "^3.198",
         "composer/package-versions-deprecated": "^1.10.99",
         "iampersistent/config-value-component": "^1.2.0",
+        "infinityweb/glide-optimizer": "^1.1",
         "laminas/laminas-cli": "^1.2.0",
         "laminas/laminas-component-installer": "^2.5.0",
         "laminas/laminas-config": "^3.7",
