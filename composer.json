@@ -23,7 +23,10 @@
         "forum": "https://discourse.laminas.dev"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "laminas/laminas-component-installer": true
+        }
     },
     "extra": {
         "laminas": {
@@ -53,8 +56,9 @@
         "league/flysystem-aws-s3-v3": "^2.1",
         "league/glide": "^2.0",
         "mezzio/mezzio": "^3.5.0",
-        "mezzio/mezzio-fastroute": "^3.0",
+        "mezzio/mezzio-fastroute": "^3.7.0",
         "mezzio/mezzio-helpers": "^5.6.0",
+        "nikic/fast-route": "v1.x-dev",
         "psr/http-factory": "^1.0",
         "symfony/dotenv": "^5.3",
         "zestic/flysystem2-component": "dev-main"

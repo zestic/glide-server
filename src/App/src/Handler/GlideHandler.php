@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace App\Handler;
 
-use Laminas\Diactoros\Response\HtmlResponse;
 use League\Glide\Server;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -19,6 +18,6 @@ class GlideHandler implements RequestHandlerInterface
 
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
-        return $this->server->getImageResponse($request->getUri()->getPath(), $_GET);
+        return $this->server->getImageResponse($request->getAttribute('filename'), $_GET);
     }
 }
