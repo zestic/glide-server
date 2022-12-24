@@ -18,8 +18,6 @@ class GlideHandler implements RequestHandlerInterface
 
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
-        $filename = $request->getAttribute('filename') . '.' . $request->getAttribute('ext');
-
-        return $this->server->getImageResponse($filename, $_GET);
+        return $this->server->getImageResponse($request->getAttribute('filename'), $_GET);
     }
 }
