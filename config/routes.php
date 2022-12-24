@@ -38,6 +38,6 @@ use Psr\Container\ContainerInterface;
  */
 
 return static function (Application $app, MiddlewareFactory $factory, ContainerInterface $container): void {
-    $app->any('/{filename}', App\Handler\GlideHandler::class);
+    $app->any('/{filename}.{ext}', App\Handler\GlideHandler::class);
     $app->get('/api/ping', App\Handler\PingHandler::class, 'api.ping');
 };
